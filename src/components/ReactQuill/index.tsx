@@ -39,7 +39,7 @@ export const ReactQuill = () => {
         </li>
       </ul>
 
-      <div className="h-[30rem]">
+      <div className="h-[20rem]">
         <ReactQuillLib
           theme="snow"
           value={value}
