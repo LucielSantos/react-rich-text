@@ -16,7 +16,6 @@ import {
   FaUnderline,
 } from "react-icons/fa";
 import { MdHorizontalRule } from "react-icons/md";
-import { TbBlockquote } from "react-icons/tb";
 import { BiRedo, BiUndo } from "react-icons/bi";
 
 export const EditorToolbar = () => {
@@ -163,13 +162,6 @@ export const EditorToolbar = () => {
           isActive={editor?.isActive("code")}
         >
           <FaCode size={16} />
-        </CommandButton>
-
-        <CommandButton
-          onClick={() => editor?.chain().focus().toggleBlockquote().run()}
-          isActive={editor?.isActive("blockquote")}
-        >
-          <TbBlockquote size={16} />
         </CommandButton>
 
         <CommandButton onClick={setLink} isActive={editor?.isActive("link")}>
