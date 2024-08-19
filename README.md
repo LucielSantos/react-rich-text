@@ -1,7 +1,5 @@
 # React Rich Text (wysiwyg) editor libraries
 
----
-
 Demo page: https://luciel-react-rich-text.netlify.app/
 
 This project is using this technologies:
