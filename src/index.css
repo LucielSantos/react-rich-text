@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .tiptap .toolbarContainer {
+    @apply border rounded-t-md p-1 border-zinc-200 flex gap-3;
+  }
+
+  .tiptap .toolbarSection {
+    @apply flex gap-1;
+  }
+}
+
+@layer base {
+  .tiptap ul,
+  .tiptap ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+
+  .tiptap h1,
+  .tiptap h2,
+  .tiptap h3,
+  .tiptap h4,
+  .tiptap h5,
+  .tiptap h6 {
+    margin: revert;
+    padding: revert;
+    font-size: revert;
+    font-weight: revert;
+  }
+
+  .tiptap blockquote {
+    margin: revert;
+    padding: revert;
+  }
+
+  .tiptap a {
+    color: revert;
+    text-decoration: revert;
+  }
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

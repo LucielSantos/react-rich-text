@@ -1,5 +1,4 @@
-import { ReactQuill } from "./components";
-import { ReactDraft } from "./components/ReactDraft";
+import { ReactQuill, ReactDraft, TipTap } from "./components";
 
 function App() {
   return (
@@ -8,6 +7,9 @@ function App() {
       <hr className="my-4" />
 
       <div className="w-full flex flex-col gap-4">
+        <h2 className="text-2xl mb-2 ">Tiptap</h2>
+        <TipTap />
+
         <h2 className="text-2xl mb-2 ">ReactQuill</h2>
         <ReactQuill />
 
